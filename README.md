@@ -1,2 +1,2 @@
-# trans-multi-lang
- Multiple translations
+# trans-multi-lang (เว็บหลายภาษา)
+เว็บหลายภาษา

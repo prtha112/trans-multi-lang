@@ -8,6 +8,7 @@ trans-multi-lang คือไรบรารี่ที่ลดเวลาใ
 
 ```php
 // เซตภาษาเริ่มต้นของเว็บเมื่อเข้ามา
+include 'trans.php';
 $trans = new trans();
 $trans->LangLocal('en');
 

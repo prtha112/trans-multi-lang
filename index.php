@@ -4,10 +4,6 @@ include 'trans.php';
 
 $trans = new trans();
 $trans->LangLocal('en');
-
-/* echo '<pre>';
-  echo print_r($trans->trans_lang('menu'),true);
-  echo '</pre>'; */
 ?>
 <html>
     <head>
@@ -37,19 +33,28 @@ $trans->LangLocal('en');
                                     <?php
                                     switch ($trans->GetSession()) {
                                         case 'th':
-                                            echo '<option value="th" selected>th</option>'
-                                            . '<option value="en">en</option>';
+                                            echo '<option value="th" selected>TH</option>'
+                                            . '<option value="en">EN</option>'
+                                                . '<option value="jp">JP</option>';
                                             break;
                                         case 'en':
-                                            echo '<option value="th">th</option>'
-                                            . '<option value="en" selected>en</option>';
+                                            echo '<option value="th">TH</option>'
+                                            . '<option value="en" selected>EN</option>'
+                                                . '<option value="jp">JP</option>';
+                                            break;
+                                        case 'jp':
+                                            echo '<option value="th">TH</option>'
+                                            . '<option value="en" selected>EN</option>'
+                                                . '<option value="jp" selected>JP</option>';
                                             break;
                                         default:
-                                            echo '<option value="th" selected>th</option>'
-                                            . '<option value="en">en</option>';
+                                            echo '<option value="th" selected>TH</option>'
+                                            . '<option value="en">EN</option>'
+                                                . '<option value="jp">JP</option>';
                                     }
                                     ?>
                                 </select>
+                                <br/>
                                 <input type="submit" value="Change" class="btn btn-success">
                             </form>
                             <form action="clear_session.php" method="POST">
@@ -57,7 +62,7 @@ $trans->LangLocal('en');
                             </form>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-3"></div>
             </div>

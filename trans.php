@@ -36,14 +36,6 @@ class trans {
         return $decode_data[0][$lang];
     }
 
-    public function GetPathLang(String $path) {
-        $string = file_get_contents('lang/' . $path . '.json');
-        $json_a = json_decode($string, true);
-        foreach ($json_a as $value) {
-            $gettrans[] = $value;
-        }
-        return $gettrans;
-    }
 
     public function ClearSession() {
         session_destroy();

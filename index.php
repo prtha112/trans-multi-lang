@@ -23,10 +23,10 @@ $trans->LangLocal('en');
                         </div>
                         <div class="panel-body">
                             <ul>
-                                <li><?php echo $trans->trans_lang('menu', 'list1'); ?></li>
-                                <li><?php echo $trans->trans_lang('menu', 'list2'); ?></li>
-                                <li><?php echo $trans->trans_lang('menu', 'list3'); ?></li>
-                                <li><?php echo $trans->trans_lang('menu', 'list4'); ?></li>
+                                <li><?php echo $trans->lang('menu', 'list1'); ?></li>
+                                <li><?php echo $trans->lang('menu', 'list2'); ?></li>
+                                <li><?php echo $trans->lang('menu', 'list3'); ?></li>
+                                <li><?php echo $trans->lang('menu', 'list4'); ?></li>
                             </ul>  
                             <form action="setlocal.php" method="POST">
                                 <select name="lang" class="form-control">

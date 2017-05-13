@@ -13,7 +13,7 @@ class trans {
         $this->local = $lang;
     }
 
-    public function CheckSession(String $lang = null) {
+    public function SetSession(String $lang = null) {
         $_SESSION['local'] = $lang;
         if (isset($_SESSION['local'])) {
             $this->lang = $_SESSION['local'];
@@ -30,7 +30,7 @@ class trans {
         }
     }
 
-    public function trans_lang(String $path, String $lang) {
+    public function lang(String $path, String $lang) {
         $string = file_get_contents('lang/' . $this->GetSession() . "/" . $path . '.json');
         $decode_data = json_decode($string, TRUE);
         return $decode_data[0][$lang];

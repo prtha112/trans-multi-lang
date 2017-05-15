@@ -11,15 +11,15 @@ trans-multi-lang คือไรบรารี่ที่ลดเวลาใ
 // เซตภาษาเริ่มต้นของเว็บเมื่อเข้ามา
 include 'trans.php';
 $trans = new trans();
-$trans->LangLocal('en');
+$trans->langLocal('en');
 
 // ตั้งค่าภาษาตามที่ส่งข้อมูลมา เช่น en,th,jp 
 $trans = new trans();
-$trans->SetSession($_POST['lang']);
+$trans->setLang($_POST['lang']);
 
 // ถามระบบว่าตอนนี้ เก็บเซสชั่นเป็นภาษาอะไรอยู่
-$trans->GetSession();
+$trans->getLang();
 
 // หาข้อมูล เพื่อเเสดงผลภาษาที่ต้องการออกมา อยู่ในพาท lang/{location}/th.json ท่าเป็นอังกฤษ en.json สร้างเองนะครับ
-echo $trans->lang('menu', 'list1');
+echo $trans->tr('menu', 'list1');
 ```

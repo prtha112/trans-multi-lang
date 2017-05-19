@@ -23,3 +23,6 @@ $trans->getLang();
 // หาข้อมูล เพื่อเเสดงผลภาษาที่ต้องการออกมา อยู่ในพาท lang/{location}/th.json ท่าเป็นอังกฤษ en.json สร้างเองนะครับ
 echo $trans->tr('menu', 'list1');
 ```
+## License
+
+Trans-multi-lang is licensed under the [MIT License](http://opensource.org/licenses/MIT).

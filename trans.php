@@ -2,6 +2,7 @@
 
 class trans 
 {
+    //gdfgffd
     private $local;
     private $lang;
 
